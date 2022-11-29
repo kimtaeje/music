@@ -1,0 +1,13 @@
+Machine.add(me.dir()+"/pingpong.ck") => int pingpong;
+2.0 :: second => now;
+Machine.add(me.dir()+"/drummachine.ck") => int drum;
+6.0 :: second => now;
+Machine.add(me.dir()+"/modalbar.ck") => int modal;
+4.0 :: second => now;             
+Machine.remove(modal);
+4.0 :: second => now;
+Machine.replace(drum,me.dir()+"/modalbar.ck") => modal;
+4.0 :: second => now;
+Machine.remove(modal);
+4.0 :: second => now;
+Machine.remove(pingpong);
